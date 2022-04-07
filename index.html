@@ -15,64 +15,77 @@
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <img class="logo" src="./assets/logo.svg" alt="" />
-    <sector class="top">
-      <div class="top-main-img"></div>
-      <div class="top-ad">
-        <h1 class="top-ad-heading">Group Chat<br />for Everyone</h1>
-        <p class="top-ad-body">
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <div class="top-ad-button">
-          <button class="top-ad-button-blue">Download v1.3</button>
-          <button class="top-ad-button-purple">What is it?</button>
+    <main class="entire-component">
+      <img class="logo" src="./assets/logo.svg" alt="" />
+      <sector class="top">
+        <img class="top-main-img" src="./assets/tablet/image-hero.png" alt="" />
+        <div class="top-ad">
+          <h1 class="top-ad-heading">Group Chat<br />for Everyone</h1>
+          <p class="top-ad-body">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="top-ad-button">
+            <button class="top-ad-button-blue">
+              Download <span>v1.3</span>
+            </button>
+            <button class="top-ad-button-purple">What is it?</button>
+          </div>
         </div>
+        <img
+          class="top-split-img-left"
+          src="./assets/desktop/image-hero-left.png"
+          alt=""
+        />
+        <img
+          class="top-split-img-right"
+          src="./assets/desktop/image-hero-right.png"
+          alt=""
+        />
+      </sector>
+      <div class="drawing">
+        <div class="drawing-line"></div>
+        <div class="drawing-circle"><p>01</p></div>
       </div>
-      <div class="top-split-img"></div>
-    </sector>
-    <div class="drawing">
-      <div class="drawing-line"></div>
-      <div class="drawing-circle"><p>01</p></div>
-    </div>
-    <div class="images">
-      <img
-        src="./assets/desktop/image-woman-in-videocall.jpg"
-        alt="woman in videocall"
-      />
-      <img
-        src="./assets/desktop/image-women-videochatting.jpg"
-        alt="women videochatting"
-      />
-      <img
-        src="./assets/desktop/image-men-in-meeting.jpg"
-        alt="men in meeting"
-      />
-      <img src="./assets/desktop/image-man-texting.jpg" alt="man texting" />
-    </div>
+      <div class="images">
+        <img
+          src="./assets/desktop/image-woman-in-videocall.jpg"
+          alt="woman in videocall"
+        />
+        <img
+          src="./assets/desktop/image-women-videochatting.jpg"
+          alt="women videochatting"
+        />
+        <img
+          src="./assets/desktop/image-men-in-meeting.jpg"
+          alt="men in meeting"
+        />
+        <img src="./assets/desktop/image-man-texting.jpg" alt="man texting" />
+      </div>
 
-    <sector class="mid">
-      <p class="mid-subheading">Built for modern use</p>
-      <h2 class="mid-heading">Smarter meetings, all in one place</h2>
-      <p class="mid-body">
-        Send messages, share files, show your screen, and record your meetings —
-        all in one workspace. Control who can join with invite-only team access,
-        data encryption, and data export.
-      </p>
-    </sector>
+      <sector class="mid">
+        <p class="mid-subheading">Built for modern use</p>
+        <h2 class="mid-heading">Smarter meetings, all in one place</h2>
+        <p class="mid-body">
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </sector>
 
-    <div class="drawing">
-      <div class="drawing-line"></div>
-      <div class="drawing-circle"><p>02</p></div>
-    </div>
+      <div class="drawing other">
+        <div class="drawing-line"></div>
+        <div class="drawing-circle"><p>02</p></div>
+      </div>
 
-    <footer>
-      <h2 class="footer-heading">Experience more together</h2>
-      <p class="footer-body">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <button class="footer-button">Download v1.3</button>
-    </footer>
+      <footer>
+        <h2 class="footer-heading">Experience more together</h2>
+        <p class="footer-body">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <button class="footer-button">Download <span>v1.3</span></button>
+      </footer>
+    </main>
   </body>
 </html>
