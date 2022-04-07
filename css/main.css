@@ -216,4 +216,44 @@ footer span {
 .other .drawing-circle {
   background-color: #fafafa;
 }
+
+@media screen and (min-width: 481px) {
+  .top-ad .top-ad-button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .top-ad p {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .mid .mid-body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .mid h2 {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  footer {
+    background-image: url("../assets/tablet/image-footer.jpg");
+  }
+  footer p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
