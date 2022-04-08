@@ -95,6 +95,7 @@ body {
   }
 
   .images{
+    width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin-top: 4rem;
@@ -187,7 +188,9 @@ body {
     }
 
     .images {
-      display: flex;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-area: "f s t o";
       gap: 0.5rem;
     }
     
