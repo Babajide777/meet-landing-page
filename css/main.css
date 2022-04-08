@@ -68,15 +68,23 @@ body {
 }
 
 .top-ad .top-ad-button button span {
-  color: #87879d;
+  color: #8FE3F9;
 }
 
 .top-ad .top-ad-button button:nth-of-type(1) {
   background-color: #4d96a9;
 }
 
+.top-ad .top-ad-button button:nth-of-type(1):hover {
+  background-color: #8FE3F9;
+}
+
 .top-ad .top-ad-button button:nth-of-type(2) {
   background-color: #855fb1;
+}
+
+.top-ad .top-ad-button button:nth-of-type(2):hover {
+  background-color: #d9b8ff;
 }
 
 .top-split-img-left, .top-split-img-right {
@@ -166,8 +174,8 @@ footer {
   background-image: url("../assets/mobile/image-footer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #4d96a9;
-  background-blend-mode: overlay;
+  background-color: #8FE3F9;
+  background-blend-mode: multiply;
   height: 300px;
   color: #fafafa;
   display: -webkit-box;
@@ -202,6 +210,10 @@ footer button {
   color: #fafafa;
   font-weight: 900;
   background-color: #855fb1;
+}
+
+footer button:hover {
+  background-color: #d9b8ff;
 }
 
 footer span {
@@ -254,6 +266,77 @@ footer span {
   footer p {
     padding-left: 10%;
     padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "f s t";
+  }
+  .top .top-split-img-left {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: f;
+  }
+  .top .top-ad {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: s;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .top .top-split-img-right {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: t;
+  }
+  .top img {
+    width: 100%;
+  }
+  .top-split-img-left,
+  .top-split-img-right {
+    display: block;
+  }
+  .top-main-img {
+    display: none;
+  }
+  .images {
+    padding-left: 8%;
+    padding-right: 8%;
+    gap: 1.5rem;
+  }
+  .mid h2 {
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+  .mid .mid-body {
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+  footer {
+    background-image: url("../assets/desktop/image-footer.jpg");
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer p {
+    width: 20%;
+    padding: 0;
+    text-align: left;
+  }
+  footer h2 {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

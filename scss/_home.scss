@@ -47,15 +47,22 @@ body {
         color: $seventh;
         font-weight: map-get($font-weight, bold);
         span{
-          color: $fourth;
+          color: $fifth;
         }
 
     }
     button:nth-of-type(1){
       background-color: $first;
     }
+    button:nth-of-type(1):hover{
+      background-color: $fifth;
+    }
+
     button:nth-of-type(2) {
       background-color: $second;
+    }
+    button:nth-of-type(2):hover{
+      background-color: $sixth;
     }
   }
   }
@@ -133,8 +140,8 @@ body {
     background-image:url("../assets/mobile/image-footer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: $first;
-    background-blend-mode: overlay;
+    background-color: $fifth;
+    background-blend-mode: multiply;
     height: 300px;
     color: $seventh;
     display: flex;
@@ -156,6 +163,9 @@ body {
       color: $seventh;
       font-weight: map-get($font-weight, bold);
       background-color: $second;
+    }
+    button:hover {
+      background-color: $sixth;
     }
     span {
       color: $fourth;
@@ -207,4 +217,73 @@ body {
       }
     }
     
+  }
+
+  @media screen and (min-width: 768px){
+    .top{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas: "f s t";
+
+      .top-split-img-left{
+        grid-area: f;
+      }
+
+      .top-ad{
+        grid-area: s;
+        align-self: center;
+      }
+
+      .top-split-img-right{
+        grid-area: t;
+      }
+      img{
+        width: 100%;
+      }
+    }
+
+    .top-split-img-left,
+    .top-split-img-right {
+      display: block;
+    }
+
+    .top-main-img{
+      display: none;
+    }
+
+    .images {
+      padding-left: 8%;
+      padding-right: 8%;
+      gap: 1.5rem;
+    }
+
+    .mid h2 {
+      padding-left: 40%;
+      padding-right: 40%;
+    }
+
+    .mid .mid-body {
+      padding-left: 35%;
+      padding-right: 35%;
+    }
+
+    footer {
+      background-image: url("../assets/desktop/image-footer.jpg");
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      p{
+        width: 20%;
+        padding: 0;
+        text-align: left;
+      }
+
+      h2{
+        padding: 0;
+      }
+    
+      
+    }
+
   }
